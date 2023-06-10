@@ -1,0 +1,202 @@
+:root{
+    --fondo: #e4e7e7;
+    --oscuro: #111c2d;
+    --principal-claro: #497cba;
+    --principal: #2a5c97;
+    --mas-claro: #7db1cc;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.bloque {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    background-color: var(--fondo);
+}
+
+.entero{
+    height: 100vh;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.columna {
+    padding: 20px 10px;
+}
+
+.contenidoColumna{
+    width: 100%;
+    display: flex;
+    border-radius: 20px 20px 20px 60px;
+    height: 95vh;
+    padding: 20px 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 10px;
+    background-color: #fff;
+    box-shadow: 1px 5px 16px #888;
+}
+
+.martin{
+    color: var(--principal);
+    font-size: 75px;
+}
+
+.miselli{
+    color: var(--oscuro);
+}
+
+.pags{
+    width: 35px;
+    margin-left: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav ul a {
+    text-decoration: none;
+    color: var(--principal);
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+nav ul a:hover {
+    background-color: var(--oscuro);
+    color: var(--mas-claro);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion{
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.fotoYo{
+    border-radius: 60px;
+    margin: 0px auto;
+
+}
+  
+.il{
+    width: 50px;
+    margin: 0px 5px;
+    transition: all .3s ease;
+}
+
+.il:hover{
+    transform: rotate(10deg); /* Aplica una rotación de 10 grados en sentido horario */
+}
+
+.ol:hover{
+    transform: rotate(-10deg); /* Aplica una rotación de 10 grados en sentido horario */
+}
+
+.imag{
+    display: flex;
+    margin: 5px;
+}
+
+.flechas{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    align-items:center;
+    font-size: 20px;
+}
+
+.flechas a{
+    color: white;
+}
+
+.flechas a:hover{
+    color: grey;
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+
+
+.rotating-image {
+    animation: rotate 5s linear infinite; 
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+  }
+
+@media (max-width: 560px){
+    
+    .divPags{
+        display: flex;
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+        flex-direction: column;
+    }
+    
+    /*ESTOS VAN MÁS CHICOS PERO TODAVÍA NO SE CUÁN CHICOS */
+    .contenidoColumna{
+        height: 100px;
+    }
+
+    .bloque{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenidoColumna h1{
+        display: none;
+    }
+
+    .columna{
+        width: 100%;
+    }
+}
