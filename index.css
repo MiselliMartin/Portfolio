@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", Roboto;
 }
 
 *::before, *::after {
@@ -27,6 +28,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 3.5fr;
     background-color: var(--fondo);
+    gap: 10px
 }
 
 .entero{
@@ -53,14 +55,33 @@ a{
     background-color: #fff;
     box-shadow: 1px 5px 16px #888;
 }
+.contenidoColumna h2{
+    visibility: hidden;
+}
 
-.martin{
+.python{
+    color: var(--oscuro)
+}
+
+.developer{
+    font-style: italic;
+    color: var(--principal);
+}
+
+.btn{
+    display: none;
+}
+
+.martin {
+    font-style: italic;
     color: var(--principal);
     font-size: 75px;
+    font-weight: 900;
 }
 
 .miselli{
     color: var(--oscuro);
+    font-style: normal;
 }
 
 .pags{
@@ -86,8 +107,9 @@ nav ul a {
     color: var(--principal);
     margin: 0 10px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: background-color 0.3s ease;
+    margin-top: 2px;
 }
   
 nav ul a:hover {
@@ -130,7 +152,7 @@ nav ul a:hover {
 
 .imag{
     display: flex;
-    margin: 5px;
+    margin: 5px auto;
 }
 
 .flechas{
@@ -167,19 +189,14 @@ nav ul a:hover {
     }
   }
 
-@media (max-width: 560px){
-    
-    .divPags{
-        display: flex;
-        position: fixed;
-        right: 5px;
-        bottom: 5px;
-        flex-direction: column;
-    }
-    
-    /*ESTOS VAN MÁS CHICOS PERO TODAVÍA NO SE CUÁN CHICOS */
+@media (max-width: 1000px){
     .contenidoColumna{
         height: 100px;
+    }
+
+    .contenidoColumna h2{
+        display: none;
+        visibility: visible;
     }
 
     .bloque{
@@ -198,5 +215,74 @@ nav ul a:hover {
 
     .columna{
         width: 100%;
+    }
+
+    .entero{
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 650px){
+    
+    .divPags{
+        display: flex;
+        position: fixed;
+        right: 10px;
+        bottom: 5px;
+        flex-direction: column;
+    }
+       
+}
+
+@media (max-width: 553px){
+    
+    .contenidoColumna h2{
+        display: inline;
+    }
+
+    .btn{
+        display: inline;
+    }
+
+    .contenidoColumna{
+        flex-direction: row;
+    }
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenidoColumna nav{
+        display: flex;
+        position: fixed;
+        height: calc(100vh - 140px);
+        top: -100vh;
+        background-color: var(--principal);
+        width: 98%;
+        flex: column;
+        transition: all .4s;
+        justify-content: center;
+    }
+
+    .contenidoColumna li{
+        margin: 20px;
+        color: #e9f8ff;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .contenidoColumna li:hover{
+        background-color: var(--oscuro);
+        color: var(--principal-claro);
+    }
+
+    .contenidoColumna .aparecer{
+        top: 140px;
+        border-radius: 60px 20px 20px 20px;
+        box-shadow: -1px -5px 16px #888;
     }
 }
