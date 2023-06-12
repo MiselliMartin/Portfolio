@@ -15,5 +15,24 @@ document.addEventListener("DOMContentLoaded", () => {
       navbar.style.position = "fixed";
       navbar.classList.toggle("aparecer");
     });
+
+const divColum = document.getElementById("costadito");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    // Verifica si el div está visible
+    if (entry.isIntersecting) {
+      // Agrega la clase cuando está visible
+      div.classList.add("visible");
+    } else {
+      // Remueve la clase cuando no está visible
+      div.classList.remove("visible");
+    }
+  });
+});
+
+observer.observe(divColum);
+
+
   });
   
