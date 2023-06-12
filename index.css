@@ -284,6 +284,8 @@ nav ul a:hover {
     box-shadow: 1px 5px 16px #888;
     flex-direction: column;
     gap: 2px;
+    height: 200px;
+    justify-content: space-around;
 }
 
 .certs{
