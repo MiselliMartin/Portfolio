@@ -137,8 +137,7 @@ nav ul a:hover {
     flex-direction: column;
 }
 
-.presentacion{
-    height: 100vh;
+.primero{
     display: flex;
     align-items: start;
     justify-content: space-evenly;
@@ -191,19 +190,6 @@ nav ul a:hover {
     transition: all .3s ease;
 }
 
-.rotating-image {
-    animation: rotate 5s linear infinite; 
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg); 
-    }
-    100% {
-      transform: rotate(360deg); 
-    }
-  }
-
 .saludo{
     margin: 0 auto;
     font-size: 50px;
@@ -216,6 +202,7 @@ nav ul a:hover {
     justify-content: space-around;
     align-items: start;
     color: var(--principal);
+    gap: 20px;
 }
 
 #yo p{
@@ -231,6 +218,21 @@ nav ul a:hover {
     font-size: x-large;
     color: (var(--oscuro));
     text-align: center;
+}
+
+.costadito{
+    display: none;
+}
+/*IMPLEMENTAR .estar*/
+.costadito .estar{
+    position: fixed;
+    width: 34.06px;
+    height: 100px;
+    display: inline;
+    bottom: calc(50% - 100px);
+    right: 10px;
+    border-radius: 10px 10px 10px 20px;
+    box-shadow: 1px 5px 16px #888;
 }
 
 @media (max-width: 1000px){
@@ -274,7 +276,12 @@ nav ul a:hover {
         right: 10px;
         bottom: 5px;
         flex-direction: column;
-        gap: 20px;
+        gap: 5px;
+        align-items: center;
+    }
+    
+    .fotoYo{
+        width: 200px
     }
        
 }
