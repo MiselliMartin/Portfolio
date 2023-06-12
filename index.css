@@ -232,6 +232,86 @@ nav ul a:hover {
     color: var(--oscuro);
 }
 
+#educacion h1, h2{
+    color: var(--oscuro);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#educacion h3{
+    color: var(--oscuro);
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+#educacion p, span, a{
+    color: var(--principal-claro);
+}
+
+#educacion span{
+    background-color: var(--fondo);
+    border-radius: 5px 5px 5px 10px;
+    box-shadow: 1px 5px 16px #888;
+    padding: 5px;
+    transition: all .5s ease;
+}
+
+#educacion span:hover{
+    background-color: var(--oscuro);
+    color: var(--mas-claro);
+}
+
+#educacion .est h3{
+    font-size: x-large;
+}
+
+.ests{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.est{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 1px 5px 16px #888;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.certs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: start;
+    justify-content: space-around;
+    gap: 20px;
+    padding-right: 5px;
+    margin: 20px 0px;
+}
+
+.cert{
+    padding: 2px 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 20px 60px;
+    box-shadow: 1px 5px 16px #888;
+    text-align: center;
+}
+
+
 @media (max-width: 1000px){
     .contenidoColumna{
         height: 100px;
@@ -278,6 +358,12 @@ nav ul a:hover {
         align-items: center;
     }
 }
+@media (max-width: 700px){
+    .certs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 @media (max-width: 650px){
     
@@ -349,3 +435,26 @@ nav ul a:hover {
         box-shadow: -1px -5px 16px #888;
     }
 }
+
+@media (max-width: 475px){
+    .tecnologia {
+        display: none;
+    }
+    .imag{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 450px){
+    .certs {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 370px){
+    .bloque {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
