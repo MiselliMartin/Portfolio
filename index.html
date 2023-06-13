@@ -18,11 +18,11 @@
                 <h2 class="python">Python <span class="developer">Developer</span></h2>
                 <nav id="navbar" class="">
                     <ul class="navbar">
-                        <a href="#primero"><li class="nav-link">Yo</li></a> 
-                        <a href="#yo"><li class="nav-link">Sobre mí</li></a> 
-                        <a href="#proyectos"><li class="nav-link">Proyectos</li></a>
-                        <a href="#educacion"><li class="nav-link">Educación</li></a>
-                        <a href="#contacto"><li class="nav-link">Contacto</li></a>
+                        <a href="#inicio" data-url="indicador1" class="navlink"><li>Inicio</li></a> 
+                        <a href="#sobremi" data-url="indicador2" class="navlink"><li>Sobre mí</li></a> 
+                        <a href="#proyectos" data-url="indicador3" class="navlink"><li>Proyectos</li></a>
+                        <a href="#educacion" data-url="indicador4" class="navlink"><li>Educación</li></a>
+                        <a href="#contacto" data-url="indicador5" class="navlink"><li>Contacto</li></a>
                     </ul>
                 </nav>
                 <span id="btn" class="btn"><i class="fa fa-bars"></i></span>
@@ -33,16 +33,16 @@
             </div>
         </div>
         <div id="costadito" class="costadito estar">
-            <a href="#primero"><span class="iconcito"><i class="fa-solid fa-circle"></i></span></a>
-            <a href="#yo"><span class="iconcito"><i class="fa-solid fa-circle"></i></span></a>
-            <a href="#proyectos"><span class="iconcito"><i class="fa-solid fa-circle"></i></span></a>
-            <a href="#educacion"><span class="iconcito"><i class="fa-solid fa-circle"></i></span></a>
-            <a href="#contacto"><span class="iconcito"><i class="fa-solid fa-circle"></i></span></a>
+            <a href="#inicio"><span class="iconcito"><i data-url="indicador1" class="fa-regular fa-circle"></i></span></a>
+            <a href="#sobremi"><span class="iconcito"><i data-url="indicador2" class="fa-regular fa-circle"></i></span></a>
+            <a href="#proyectos"><span class="iconcito"><i data-url="indicador3" class="fa-regular fa-circle"></i></span></a>
+            <a href="#educacion"><span class="iconcito"><i data-url="indicador4" class="fa-regular fa-circle"></i></span></a>
+            <a href="#contacto"><span class="iconcito"><i data-url="indicador5" class="fa-regular fa-circle"></i></span></a>
         </div>
         <div>  
-            <section id="primero" class="entero primero">
+            <section id="inicio" class="entero primero">
                     <div style="display: flex;">
-                        <h1 class="martin">MARTIN <span class="miselli">MISELLI</span></h1>
+                        <h1 id="indicador1" class="martin indicador">MARTIN <span class="miselli">MISELLI</span></h1>
                     </div>
                     
                     <img class="fotoYo" src="./img/yodibujo.jpeg" alt="Foto de Martín Miselli">  
@@ -60,8 +60,8 @@
                     </div>
             </section>
              
-            <section id="yo" class="entero">
-                <h2 class="saludo">Buenas!</h2> 
+            <section id="sobremi" class="entero">
+                <h2 id="indicador2" class="saludo indicador">Buenas!</h2> 
                 <p>
                     Soy Martín Miselli, un profesor de economía apasionado por la <span>tecnología</span> y la <span>programación</span>. Mi sólida formación académica en economía se combina con mi entusiasmo por la tecnología, lo que me impulsa a resolver problemas y crear <span>soluciones innovadoras</span>.
                 </p>
@@ -74,12 +74,11 @@
             </section>
         
             <section id="proyectos" class="entero">
-                <h2>Proyectos</h2>
+                <h2 id="indicador3" class="indicador">Proyectos</h2>
             </section>
 
             <section id="educacion" class="entero">
-                <h2>Educación Formal:</h2>
-                <hr>
+                <h2 id="indicador4" class="indicador">Educación Formal:</h2>
                 <div class="ests">
                     <div class="est">
                         <h3>Profesorado de Educación Secundaria en Economía y Gestión</h3>
@@ -101,7 +100,6 @@
                     </div>  
                 </div>
                 <h2>Certificados:</h2>
-                <hr>
                 <div class="certs">
                     <div class="cert">
                         <h3>EF SET </h3>
@@ -164,7 +162,7 @@
             </section>
         
             <section id="contacto" class="entero">
-                <h2>Contacto</h2>
+                <h2 id="indicador5" class="indicador">Contacto</h2>
             </section>
         </div>
     </div>

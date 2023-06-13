@@ -127,7 +127,7 @@ nav ul a:hover {
     color: var(--mas-claro);
 }
 
-.nav-link .active{
+.active{
     background-color: var(--oscuro);
     color: var(--mas-claro);
 }
@@ -197,7 +197,7 @@ nav ul a:hover {
     color: var(--oscuro);
 }
 
-#yo{
+#sobremi{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -206,16 +206,16 @@ nav ul a:hover {
     gap: 20px;
 }
 
-#yo p{
+#sobremi p{
     font-size: x-large;
 }
 
-#yo span{
+#sobremi span{
     color: var(--oscuro);
     font-weight: bold;
 }
 
-#yo h3{
+#sobremi h3{
     font-size: x-large;
     color: (var(--oscuro));
     text-align: center;
@@ -233,10 +233,12 @@ nav ul a:hover {
     color: var(--oscuro);
 }
 
-#educacion h1, h2{
+#educacion h2{
     color: var(--oscuro);
     font-weight: bold;
     font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: var(--principal);
 }
 
 #educacion h3{
