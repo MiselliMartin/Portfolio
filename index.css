@@ -463,3 +463,20 @@ nav ul a:hover {
     }
 }
 
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    background-color: var(--principal);
+    width: 12px;
+  }
+  
+  /* Estilo del pulgar */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--mas-claro);
+    border-radius: 5px;
+  }
+  
+  /* Estilo de la pista */
+  ::-webkit-scrollbar-track {
+    background-color: var(--principal);
+  }
