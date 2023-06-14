@@ -148,6 +148,7 @@ nav ul a:hover {
     border-radius: 60px;
     margin: 0px auto;
     width: 300px;
+    box-shadow: 1px 5px 16px #888;
 
 }
   
@@ -265,7 +266,7 @@ nav ul a:hover {
     color: var(--mas-claro);
 }
 
-#educacion .est h3{
+.est h3{
     font-size: x-large;
 }
 
@@ -315,6 +316,20 @@ nav ul a:hover {
     box-shadow: 1px 5px 16px #888;
     text-align: center;
 }
+
+.cert span{
+    background-color: var(--fondo);
+    border-radius: 5px 5px 5px 10px;
+    box-shadow: 1px 5px 16px #888;
+    padding: 5px;
+    transition: all .5s ease;
+}
+
+.cert span:hover{
+    background-color: var(--oscuro);
+    color: var(--mas-claro);
+}
+
 
 
 @media (max-width: 1000px){
@@ -453,6 +468,44 @@ nav ul a:hover {
 @media (max-width: 450px){
     .certs {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 373px) {
+    .martin{
+        font-size: 45px;
+    }
+
+    .saludo{
+        font-size: 25px;
+    }
+    
+    #sobremi p {
+        font-size: medium;
+    }
+
+    #sobremi h3 {
+        font-size: large;
+    }
+
+    #educacion h2 {
+        font-size: large;
+    }
+
+    .est {
+        height: 250px;
+    }
+
+    .est h3{
+        font-size: large;
+    }
+
+    .est p{
+        font-size: small;
+    }
+
+    .cert p{
+        font-size: small;
     }
 }
 
