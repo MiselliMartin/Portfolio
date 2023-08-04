@@ -234,7 +234,7 @@ nav ul a:hover {
     color: var(--oscuro);
 }
 
-#educacion h2{
+.entero h2{
     color: var(--oscuro);
     font-weight: bold;
     font-size: xx-large;
@@ -330,6 +330,55 @@ nav ul a:hover {
     color: var(--mas-claro);
 }
 
+.botoncitos {
+    display: flex;
+    height: 100px;
+    width: 80%;
+    /* display: inline-block; */
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-buttons{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Estilos para el botón de redactar mail */
+.mail {
+    background-color: var(--principal-claro); /* Azul claro */
+}
+
+/* Estilos para el botón de LinkedIn */
+.linkedin {
+    background-color: var(--principal); /* Azul oscuro */
+}
+
+/* Estilos para el botón de GitHub */
+.github {
+    background-color: var(--oscuro) /* Gris oscuro */
+}
+
+/* Cambiar el color del texto al pasar el cursor por encima del botón */
+.botoncitos:hover {
+    color: #fff;
+}
+
+/* Cambiar el fondo del botón al pasar el cursor por encima */
+.botoncitos:hover {
+    background-color: #555; /* Gris medio */
+}
 
 
 @media (max-width: 1000px){
@@ -488,7 +537,7 @@ nav ul a:hover {
         font-size: large;
     }
 
-    #educacion h2 {
+    .entero h2 {
         font-size: large;
     }
 
