@@ -148,6 +148,7 @@ nav ul a:hover {
     border-radius: 60px;
     margin: 0px auto;
     width: 300px;
+    box-shadow: 1px 5px 16px #888;
 
 }
   
@@ -233,7 +234,7 @@ nav ul a:hover {
     color: var(--oscuro);
 }
 
-#educacion h2{
+.entero h2{
     color: var(--oscuro);
     font-weight: bold;
     font-size: xx-large;
@@ -265,7 +266,7 @@ nav ul a:hover {
     color: var(--mas-claro);
 }
 
-#educacion .est h3{
+.est h3{
     font-size: x-large;
 }
 
@@ -314,6 +315,69 @@ nav ul a:hover {
     border-radius: 20px 20px 20px 60px;
     box-shadow: 1px 5px 16px #888;
     text-align: center;
+}
+
+.cert span{
+    background-color: var(--fondo);
+    border-radius: 5px 5px 5px 10px;
+    box-shadow: 1px 5px 16px #888;
+    padding: 5px;
+    transition: all .5s ease;
+}
+
+.cert span:hover{
+    background-color: var(--oscuro);
+    color: var(--mas-claro);
+}
+
+.botoncitos {
+    display: flex;
+    height: 100px;
+    width: 80%;
+    /* display: inline-block; */
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-buttons{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Estilos para el botón de redactar mail */
+.mail {
+    background-color: var(--principal-claro); /* Azul claro */
+}
+
+/* Estilos para el botón de LinkedIn */
+.linkedin {
+    background-color: var(--principal); /* Azul oscuro */
+}
+
+/* Estilos para el botón de GitHub */
+.github {
+    background-color: var(--oscuro) /* Gris oscuro */
+}
+
+/* Cambiar el color del texto al pasar el cursor por encima del botón */
+.botoncitos:hover {
+    color: #fff;
+}
+
+/* Cambiar el fondo del botón al pasar el cursor por encima */
+.botoncitos:hover {
+    background-color: #555; /* Gris medio */
 }
 
 
@@ -453,6 +517,44 @@ nav ul a:hover {
 @media (max-width: 450px){
     .certs {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 373px) {
+    .martin{
+        font-size: 45px;
+    }
+
+    .saludo{
+        font-size: 25px;
+    }
+    
+    #sobremi p {
+        font-size: medium;
+    }
+
+    #sobremi h3 {
+        font-size: large;
+    }
+
+    .entero h2 {
+        font-size: large;
+    }
+
+    .est {
+        height: 250px;
+    }
+
+    .est h3{
+        font-size: large;
+    }
+
+    .est p{
+        font-size: small;
+    }
+
+    .cert p{
+        font-size: small;
     }
 }
 
